@@ -1,0 +1,106 @@
+@import ' ../../../../assets/css/var.scss' ;
+
+.product{
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    .hover__img{
+      left: 20px;
+    }
+  }
+  .hover__img{
+    position: absolute;
+    top: 24px;
+    left: -40px;
+    transition: .5s;
+    .img{
+      width: 36px;
+      height: 28px;
+      background-color:#A2AEDB ;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      border-radius: 6px;
+      z-index: 1;
+      margin-bottom: 6px;
+    }
+    .b{
+      background-color: #FFBD95;
+    }
+  }
+  &__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 52px;
+      background-color: $backgraund;
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+    &--title{
+      font-size: 15px;
+      .link{
+        width: 166px;
+        overflow: hidden;
+
+        a{
+          white-space: nowrap;
+          color: #000;
+          line-height: 17px;
+          font-weight: 400;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 6px;
+        }
+      
+      }
+      .price{
+        font-weight: 600;
+      }
+      .price{
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &__purchase{
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    font-size: 11px;
+    color: #BBC2D0;
+    .sum{
+      padding: 2px 6px;
+      background-color: $lreed;
+      font-weight: 600;
+      font-size: 13px;
+      color: #fff;
+      margin-right: 6px;
+    }
+  }
+}
+// @media(max-width:720px){
+//   .product{
+//     width: 180px;
+//     padding: 10px;
+//     &__box{
+//       &--img{
+//         padding: 16px 0px;
+//       }
+//     }
+//   }
+// }

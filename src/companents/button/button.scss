@@ -1,0 +1,17 @@
+@import '../../assets/css/var.scss';
+.button{
+  button{
+    padding: 17px;
+    width: 100%;
+    background-color: $green;
+    border-radius: 26px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: .5s;
+    &:hover{
+      background-color: darken($green, 5deg);
+    }
+  }
+}

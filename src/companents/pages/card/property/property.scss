@@ -1,0 +1,74 @@
+@import '../../../../assets/css/var.scss';
+.property{
+  font-weight: 400;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 30px;
+  &__title{
+    color: #00C48C;
+  }
+
+  &__item{
+    color:#BBC2D0 ;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .img{
+      width:36px ;
+      height: 28px;
+      background-color: #F39DBD;
+      object-fit: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      margin-right: 16px;
+      margin-bottom: auto;
+    }
+    .s{
+      background-color: #A2AEDB;
+    }
+    .g{
+      background-color: #FFBD95;
+    }
+    .a{
+      background-color: #AAD9AC;
+    }
+    &--title{
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      input{
+        min-width: 24px;
+        min-height: 24px;
+        // accent-color: red;
+         filter: hue-rotate(120deg) 
+      }
+      .text{
+        .name{
+          color:#000;
+          margin-bottom: 10px;
+          &s{
+            font-size: 15px;
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 8px;
+          }
+        }
+     
+      }
+    }
+  }
+}
+@media(max-width:451px){
+  .property{
+    &__item{
+      &--title{
+        .text{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

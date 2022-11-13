@@ -1,0 +1,144 @@
+@import '../../../../assets/css/var.scss';
+.cardInfo{
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+
+  &__price{
+    color: #BBC2D0;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    .price{
+      font-weight: 600;
+      line-height: 19px;
+      color: #000;
+      margin-top: 8px;
+      margin-bottom: 15px;
+    }
+  
+  }
+  &__fullPrice{
+    color: #BBC2D0;
+    font-weight: 400;
+    line-height: 18px;
+    min-width: 100%;
+    flex-basis: 100%;
+    .price{
+      color:#000;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    .cried{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .sum{
+        border-radius: 3px;
+      }
+    }
+    &--nav{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      button{
+        color: $green;
+        width: 100%;
+        border: 1px solid $green ;
+        padding: 10px;
+        &.active,
+        &:hover{
+         background-color: $green;
+         color: #fff;
+        }
+        &:last-child{
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+        }
+        &:first-child{
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+        }
+      }
+    }
+    .percentage{
+      color: #000;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      span{
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__property{
+    font-weight: 400;
+    color:#BBC2D0;
+    margin-top: 20px;
+    .title{
+      margin-top: 20px;
+      display: flex;
+      color: #000;
+      flex-direction: column;
+      span{
+        padding: 1px;
+        font-weight: 400;
+      }
+      &__full{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 15px;
+        img{
+          width: 20px;
+          height: 20px;
+          color: $green;
+        }
+        a{
+          color: $green;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:451px){
+  .cardInfo{
+    font-size: 14px;
+    &__property{
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    &__fullPrice{
+      font-size: 14px;
+      .cried{
+        flex-direction: column;
+        width: 100%;    
+        .price{
+          width: 100%;
+        }
+        .product__purchase{
+          width: 100%;
+        }
+      }
+      .percentage{
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+    &__price{
+      .price{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

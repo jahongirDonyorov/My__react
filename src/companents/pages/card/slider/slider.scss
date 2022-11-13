@@ -1,0 +1,52 @@
+.cardslider{
+  border: 1px solid #e6e9ec;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    .hover__img{
+      left: 20px;
+    }
+  }
+  .hover__img{
+    position: absolute;
+    top: 24px;
+    left: -40px;
+    transition: .5s;
+    z-index: 2;
+    .img{
+      width: 36px;
+      height: 28px;
+      background-color:#BBC2D0 ;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+    .one{
+      background-color: #A2AEDB;
+    }
+    .thwoo{
+      background-color: #FFBD95;
+    }
+    .three{
+      background-color: #AAD9AC;
+    }
+  }
+  .splide__slide{
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+  }
+  .splide__pagination__page{
+    border: 1px solid;
+  }
+}

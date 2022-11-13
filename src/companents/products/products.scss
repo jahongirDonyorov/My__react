@@ -1,0 +1,15 @@
+.products{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  
+}
+@media(max-width:690px){
+ .products{
+  .splide__slide{
+    display: flex;
+    justify-content: center;
+  }
+ }
+}
